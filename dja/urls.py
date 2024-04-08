@@ -19,4 +19,5 @@ from django.urls import path
 from P import views
 urlpatterns = [
     path('', views.first_page),
+    path('orders/', views.orders_page, name='orders'),
 ]

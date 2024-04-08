@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логистическая компания "Логистико"</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'logo.jpg' %}" alt="Логотип Логистико">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+    <title>Должности</title>
+            </ul>
+        </nav>
+    </header>
+</head>
+
+    <div class="header"><center>У нас имеются такие должности как</center></div>
+    <div class="content">
+        {{ table | safe }}
+    </div>
+   <footer>
+        <p>&copy; 2021 Логистическая компания "Логистико". Все права защищены.</p>
+    </footer>
+
+</body>
+
+</html>
